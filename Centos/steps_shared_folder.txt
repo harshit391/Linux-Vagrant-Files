@@ -1,0 +1,5 @@
+1. Change the Vagrantfile synced_folder part to this:
+	config.vm.synced_folder "./", "/vagrant", type: "virtualbox", disabled: false
+2. And then run this command in the directory where the Vagrantfile is:
+	vagrant plugin install vagrant-vbguest
+3. Then do either vagrant reload if it was already running, or vagrant up otherwise.
